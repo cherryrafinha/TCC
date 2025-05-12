@@ -1,0 +1,42 @@
+﻿<Window x:Class="TCC.PaginaLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login" Height="577" Width="876">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="329*"/>
+            <ColumnDefinition Width="271*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Margin="49,39,0,21" HorizontalAlignment="Left" Width="412" RenderTransformOrigin="0.517,0.689">
+            <TextBlock Text="Entre na sua conta" FontSize="28" FontWeight="Bold" Margin="0 0 0 20"/>
+
+            <StackPanel Orientation="Horizontal" Margin="0 10">
+                <TextBlock Text="Email" FontSize="16" VerticalAlignment="Center" Margin="0 0 5 0"/>
+                <Border CornerRadius="5" BorderBrush="LightGray" BorderThickness="1">
+                    <TextBox x:Name="txtEmail" Width="368" Padding="5" BorderThickness="1" BorderBrush="LightGray"/>
+                </Border>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0 10">
+                <TextBlock Text="Senha" FontSize="16" VerticalAlignment="Center" Margin="0 0 5 0"/>
+                <Border CornerRadius="5" BorderBrush="LightGray" BorderThickness="1">
+                    <PasswordBox x:Name="txtSenha" Width="356" Padding="5" BorderThickness="1" BorderBrush="LightGray"/>
+                </Border>
+            </StackPanel>
+            <Border CornerRadius="5" BorderBrush="LightGray" BorderThickness="1" Width="121">
+                <Button Content="Entrar" Background="#F3BCE7" FontWeight="Bold" Padding="10 20" Width="120" Click="LoginButton_Click" BorderThickness="0" Height="58"/>
+            </Border>
+        </StackPanel>
+
+        <Border Grid.Column="1" Background="#F3BCE7" Margin="19,0,0,0" HorizontalAlignment="Left" Width="377">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="40">
+                <TextBlock Text="Novo por aqui?" Foreground="White" FontSize="24" FontWeight="Bold" TextAlignment="Center" Margin="0 0 0 10"/>
+                <TextBlock Text="Crie uma conta e descubra seu novo mundo!" TextWrapping="Wrap" TextAlignment="Center" Margin="0 0 0 20"/>
+                <Border CornerRadius="5" BorderBrush="LightGray" BorderThickness="1" Width="147">
+                    <Button Content="Criar conta" Background="White" FontWeight="Bold" Padding="10 20" Width="150" Click="CreateAccountButton_Click" BorderThickness="1" BorderBrush="#FFFFFF"/>
+                </Border>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
